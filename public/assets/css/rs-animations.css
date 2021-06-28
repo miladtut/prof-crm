@@ -1,0 +1,282 @@
+.morphin {
+    border: 10px solid;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphin 10s infinite;
+    margin: 0 auto;
+}
+@keyframes morphin {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+}
+
+/* Animation Shake Horizontal */
+.shake-x {
+    animation-name: shake-x;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes shake-x {
+    16.65% {
+        transform: translateX(8px);
+    }
+    33.3% {
+        transform: translateX(-6px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
+@-webkit-keyframes shake-x {
+    16.65% {
+        transform: translateX(8px);
+    }
+    33.3% {
+        transform: translateX(-6px);
+    }
+    49.95% {
+        transform: translateX(4px);
+    }
+    66.6% {
+        transform: translateX(-2px);
+    }
+    83.25% {
+        transform: translateX(1px);
+    }
+    100% {
+        transform:translateX(0);
+    }
+}
+
+/* Animation Shake Horizontal */
+.shake-y {
+    animation-name: shake-y;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes shake-y {
+    16.65% {
+        transform: translateY(8px);
+    }
+    33.3% {
+        transform: translateY(-6px);
+    }
+    49.95% {
+        transform: translateY(4px);
+    }
+    66.6% {
+        transform: translateY(-2px);
+    }
+    83.25% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+@-webkit-keyframes shake-y {
+    16.65% {
+        transform: translateY(8px);
+    }
+    33.3% {
+        transform: translateY(-6px);
+    }
+    49.95% {
+        transform: translateY(4px);
+    }
+    66.6% {
+        transform: translateY(-2px);
+    }
+    83.25% {
+        transform: translateY(1px);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse-anim {
+    25% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+    }
+}
+@-webkit-keyframes pulse-anim {
+    25% {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+    }
+}
+
+/* Pulse Border Animation */
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Up Down Animation */
+@keyframes up-down {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+    }
+}
+@-webkit-keyframes up-down {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+    100% {
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+    }
+}
+
+/* Left Right Animation */
+@keyframes left-right {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+    }
+}
+@-webkit-keyframes left-right {
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+    }
+}
+
+/* Rotate Animation */
+.rotate {
+    animation: rotate 5s linear infinite;
+    -webkit-animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* Waving Line Animation */
+@keyframes waving-line{
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200px 0;
+    }
+}
+@-webkit-keyframes waving-line {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -200px 0;
+    }
+}
+
+
+//Testimonials Slider
+ var single_product_image = $('.single-product-image');
+ if(single_product_image.length) {
+     $('.single-product-image').slick({
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         arrows: true,
+         dots: true,
+         asNavFor: '.single-product-nav',
+         autoplay: true;
+      });
+ }
+ var single_product_nav = $('.single-product-nav');
+ if(single_product_nav.length) {
+     $('.single-product-nav').slick({
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         asNavFor: '.single-product-image',
+         arrows: false,
+         dots: true,
+         centerMode: true,
+         focusOnSelect: true,
+     });
+ }

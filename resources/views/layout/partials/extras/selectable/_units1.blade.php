@@ -1,0 +1,12 @@
+<option value="mg">mg</option>
+<option value="gm">gm</option>
+<option value="kg">kg</option>
+<option value="ton">ton</option>
+<option value="each">each</option>
+<option value="box">box</option>
+<option value="drum">drum</option>
+<option value="pallet">pallet</option>
+<option value="vial">vial</option>
+<option value="bottle">bottle</option>
+<option value="ampoule">ampoule</option>
+<option value="other">other</option>
